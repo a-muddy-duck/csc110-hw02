@@ -1,11 +1,11 @@
+x = int(input("give me x: "))
+y = int(input("give me y: "))
 # Task 1.1:
 #  Complete the function "read_two_ints" below:
 def read_two_ints():
     # ADD a Docstring for this function
     # the return shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    x = int(input("give me x: "))
-    y = int(input("give me y: "))
     return x,y
 
 # Task 2.1:
@@ -14,7 +14,11 @@ def compute_multadd(a, b):
     # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    pass
+    abproduct = a*b
+    print(f"mult result: {abproduct}")
+    absum = a+b
+    print(f"add result: {absum}")
+    print(abproduct/absum)
 
 # Task 3.1:
 #  Complete the function "print_fancy" below:
@@ -22,7 +26,12 @@ def print_fancy(a, b, ab_multadd):
     # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    pass
+    print("****************")
+    print("RESULTS:")
+    print(f"first number: {a}")
+    print(f"second number: {b}")
+    print("multadd result: ",ab_multadd) # this is where the problem still is
+    print("================")
 
 def main ():
     # ADD a Docstring for this function
@@ -38,13 +47,13 @@ def main ():
     #  Add one line below to call multadd (note that it returns one value)
     #  the call should provide the arguments x, and y you obtained above;
     #  store the returned value in a variable called xy_multadd
-
+    xy_multadd = compute_multadd(x,y)
     # TODO: add your call instead of this line
 
     # Task 3.2:
     #  Complete The line below to call print_fancy
     #  the call should provide the arguments x, y, and xy_multadd you obtained above;
-
+    print_fancy(x,y,xy_multadd)
     # TODO: add your call instead of this line
 
 

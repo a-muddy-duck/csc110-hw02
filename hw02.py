@@ -18,9 +18,9 @@ def compute_multadd(a,b):
     print(f"mult result: {abproduct}")
     absum = a+b
     print(f"add result: {absum}")
+    print(" ")
     ab_multadd = (abproduct/absum)
-    #print("multadd result: ",ab_multadd) this line works to print 6.0 but it's not in the right spot
-    # print(ab_multadd) # this one DOES work! (prints 6.0)
+    return ab_multadd # the key was to use return! not print.
 
 # Task 3.1:
 #  Complete the function "print_fancy" below:
@@ -33,7 +33,6 @@ def print_fancy(a, b, ab_multadd):
     print(f"first number: {a}")
     print(f"second number: {b}")
     print("multadd result: ",ab_multadd)
-    #print(f"multadd result:", print(ab_multadd)) # this is where the problem still is; removing this line made "none" disappear from under 2nd num and above ==
     print("================")
 
 def main ():

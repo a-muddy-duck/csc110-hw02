@@ -31,8 +31,8 @@ def print_fancy(a, b, ab_multadd):
     print("****************")
     print("RESULTS:")
     print(f"first number: {a}")
-    print(f"second number: {b}")
-    print("multadd result: ",ab_multadd)
+    print("second number:",b)
+    print("multadd result:",ab_multadd)
     print("================")
 
 def main ():
@@ -58,7 +58,7 @@ def main ():
     #  the call should provide the arguments x, y, and xy_multadd you obtained above;
     print_fancy(x,y,xy_multadd)
     # TODO: add your call instead of this line
-
+    print(" ")
 
     # Do not modify this final print statement
     print("The End")

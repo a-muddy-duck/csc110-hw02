@@ -6,11 +6,11 @@ def read_two_ints():
     # ADD a Docstring for this function
     # the return shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    return x,y
+    return x,y #what is this line doing?
 
 # Task 2.1:
 #  Complete the function "compute_multadd" below:
-def compute_multadd(a, b):
+def compute_multadd(a,b):
     # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
@@ -18,7 +18,9 @@ def compute_multadd(a, b):
     print(f"mult result: {abproduct}")
     absum = a+b
     print(f"add result: {absum}")
-    print(abproduct/absum)
+    ab_multadd = (abproduct/absum)
+    #print("multadd result: ",ab_multadd) this line works to print 6.0 but it's not in the right spot
+    # print(ab_multadd) # this one DOES work! (prints 6.0)
 
 # Task 3.1:
 #  Complete the function "print_fancy" below:
@@ -30,7 +32,8 @@ def print_fancy(a, b, ab_multadd):
     print("RESULTS:")
     print(f"first number: {a}")
     print(f"second number: {b}")
-    print("multadd result: ",ab_multadd) # this is where the problem still is
+    print("multadd result: ",ab_multadd)
+    #print(f"multadd result:", print(ab_multadd)) # this is where the problem still is; removing this line made "none" disappear from under 2nd num and above ==
     print("================")
 
 def main ():
@@ -47,7 +50,8 @@ def main ():
     #  Add one line below to call multadd (note that it returns one value)
     #  the call should provide the arguments x, and y you obtained above;
     #  store the returned value in a variable called xy_multadd
-    xy_multadd = compute_multadd(x,y)
+    xy_multadd = compute_multadd(x,y) # defining this variable as the output of the function compute_multadd
+    #print(xy_multadd) # also does not produce anything good (this line was adding "none" under 6.0 and above **)
     # TODO: add your call instead of this line
 
     # Task 3.2:
